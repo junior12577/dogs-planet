@@ -1,0 +1,294 @@
+:root {
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+  }
+  
+  * {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+  }
+/* Estilo base para os dois ícones */
+.insta-float, .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+  
+.insta-float:hover, .whatsapp-float:hover {
+    transform: scale(1.1);
+}
+  
+/* Instagram acima */
+.insta-float {
+    bottom: 90px; /* mais acima */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+  
+  /* WhatsApp abaixo */
+.whatsapp-float {
+    bottom: 20px;
+    background-color: #25D366;
+}
+  
+  
+#header{
+    
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/banner-do-planet\ \(2\).jpg);
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+
+}
+
+.logo{
+    margin-right:40rem ;
+    height: 270px;
+}
+
+#inner-header{
+    /* padrão linha */
+    display: flex;
+    /* alinhamento é horizontal, eixo x */
+    justify-content: center;
+    /* alinhamento vertical, eixo y */
+    align-items: normal;
+}
+
+#navbar {
+    display: flex;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+}
+a{
+    display: block;
+}
+#navbar i{
+    color: #25D366; 
+    font-size: 50px;
+    margin-right: 2rem;
+    margin-top: 2px;
+}
+#navbar a {
+    
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
+.slider-container {
+    width: 1034px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+  
+.slider {
+    width: 1034px;
+    height: 434px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+  
+.slides {
+    display: flex;
+    width: calc(1034px * 3); /* número de imagens */
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slide {
+    width: 1034px;
+    height: 434px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+  
+.caption {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+}
+  
+.aprender{
+    margin-bottom: 2rem;
+    background-color: #383f80;
+    height: 8rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aprender .title-aprender{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  
+}
+
+
+
+.location{ 
+    margin-top: 5rem;
+    background-color: #383f90;
+    height: 600px;
+}
+.location .filtro{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+   
+}
+
+
+
+
+.filtro .location-rua{
+    
+    color: var(--text-color);
+    font-size: 40px;
+}
+.location .location-info{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+.location-rua {
+    font-weight: bold;
+    display: flex;
+}
+ 
+
+.location-rua h2{
+     width: 280px;
+     text-align: center;
+     font-size: 24px;
+     white-space: pre-line;
+}
+
+.destaque p{
+    color: var(--text-color);
+    width: 500px;
+    font-size: 20px;
+}
+
+.destaque h1{
+    
+    color: #185EFF;
+    border: #fff;
+    margin-bottom: 1rem;
+    
+    font-size: 50px;
+}
+
+
+.employees img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%; /* deixa a imagem redondinha */
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .employees img:hover {
+    transform: scale(1.05); /* efeito ao passar o mouse */
+  }
+
+.employees{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employees .employee-name{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#team .title-team{
+    margin-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+#team .cor-title{
+    gap: 1rem;
+    color: var(--main-color);
+}
+.employee {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: calc(33.33% - 20px); /* 3 por linha com espaço */
+    text-align: center;
+    
+    
+}
+
+
+
+.inscreva{ 
+    margin-bottom:5rem ;
+    margin-top: 5rem;
+    background-color: #3C1A7D;
+    height: 50vh;
+}
+.inscreva .filtro2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+    gap: 5rem;
+   
+}
+
+.inscreva h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.inscreva h2{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.footer{
+    padding: 2rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary);
+    font-weight: normal-;
+}
